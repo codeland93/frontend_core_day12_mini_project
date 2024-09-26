@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle Simulator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Pokémon World</a>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center">Pokémon Battle Simulator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Your Team</h3>
+                <div id="your-team" class="d-flex justify-content-center flex-wrap">
+                    <!-- Your team will be displayed here -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">Opponent Team</h3>
+                <div id="opponent-team" class="d-flex justify-content-center flex-wrap">
+                    <!-- Opponent team will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <button class="btn btn-success" onclick="simulateBattle()">Simulate Battle</button>
+        </div>
+        <div id="battle-result" class="text-center"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

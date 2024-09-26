@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Team Builder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Pokémon World</a>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center">Pokémon Team Builder</h1>
+        <form id="team-form" class="form-inline justify-content-center my-4">
+            <input type="text" class="form-control mr-2" id="pokemon-name" placeholder="Enter Pokémon Name or ID">
+            <button type="submit" class="btn btn-primary">Add to Team</button>
+        </form>
+        <div id="team-container" class="text-center">
+            <h3>Your Team:</h3>
+            <div id="team" class="d-flex justify-content-center flex-wrap">
+                <!-- Pokémon team will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Apply a retro-style font and color scheme */
+body {
+  font-family: 'Press Start 2P', cursive; /* Retro font from Google Fonts */
+  background-color: #111;
+  color: aquamarine;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('charmander.gif'); /* Add your GIF background */
+  background-size: repeat; /* Cover the entire body */
+}
+
+h1, h2, h3 {
+  color: aquamarine;
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #333; /* Retro shadow effect */
+  font-size: 2em;
+  animation: flicker 1.5s infinite alternate; /* Flicker animation */
+}
+
+button {
+  background-color: #222;
+  color: aquamarine;
+  font-family: inherit;
+  border: 2px solid aquamarine;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px aquamarine, 0 0 15px aquamarine;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: aquamarine;
+  color: #222;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+#pokemon-info {
+  border: 2px solid aquamarine;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px aquamarine, 0 0 30px aquamarine;
+  background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+}
+
+img {
+  border: 2px solid aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #333;
+  animation: jump 1s infinite alternate ease-in-out;
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+li {
+  font-size: 1.2em;
+  color: aquamarine;
+  text-shadow: 1px 1px 0px #000, 2px 2px 0px #333;
+  animation: pop 0.5s ease-in-out forwards;
+}
+
+@keyframes flicker {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.8;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Input field styling */
+input[type="text"] {
+  background-color: #222;
+  border: 2px solid aquamarine;
+  color: aquamarine;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px aquamarine;
+}
+
+input[type="text"]::placeholder {
+  color: aquamarine;
+  opacity: 0.7;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      font-size: 0.9em;
+  }
+}
+
+/* Global styles for all pages */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input, select, textarea {
+  font-family: 'Press Start 2P', cursive; /* Apply the retro font globally */
+  color: aquamarine; /* Set the text color to aquamarine globally */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Specific styling for headers */
+h1, h2, h3 {
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #333; /* Retro shadow effect */
+  animation: flicker 1.5s infinite alternate; /* Flicker animation */
+}
+
+/* Styles for links */
+a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Styles for buttons */
+button {
+  background-color: #222;
+  color: aquamarine;
+  font-family: inherit;
+  border: 2px solid aquamarine;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px aquamarine, 0 0 15px aquamarine;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: aquamarine;
+  color: #222;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+/* Input field styling */
+input[type="text"], input[type="number"], select, textarea {
+  background-color: #222;
+  border: 2px solid aquamarine;
+  color: aquamarine;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px aquamarine;
+}
+
+input[type="text"]::placeholder, input[type="number"]::placeholder, textarea::placeholder {
+  color: aquamarine;
+  opacity: 0.7;
+}
+
+/* Keyframes for animations */
+@keyframes flicker {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.8;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      font-size: 0.9em;
+  }
+}
